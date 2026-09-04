@@ -371,6 +371,68 @@ footer {
     gap: 8px;
   }
 
+  /* Scroll reveal animation */
+
+.hidden {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* Active navigation */
+
+.nav-links a.active {
+  color: var(--text);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background: var(--blue);
+  transition: width 0.25s ease;
+}
+
+
+/* Mouse glow */
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  left: var(--mouse-x, 50%);
+  top: var(--mouse-y, 50%);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(42, 116, 244, 0.08),
+    rgba(42, 116, 244, 0.025) 35%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
   footer {
     flex-direction: column;
     gap: 8px;
