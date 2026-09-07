@@ -692,15 +692,18 @@ footer {
 }
 
 @media (max-width: 520px) {
-  .explore-grid {
-    grid-template-columns: 1fr;
-  }
+  .experience-item {
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
 
-  .experience-item,
-  .learning-list div {
-    grid-template-columns: 1fr;
-    gap: 8px;
-  }
+.experience-timeline {
+  padding-left: 28px;
+}
+
+.timeline-marker {
+  left: -28px;
+}
 
   /* Scroll reveal animation */
 
