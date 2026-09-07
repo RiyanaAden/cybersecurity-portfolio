@@ -385,26 +385,148 @@ section > p {
 }
 
 .project-card {
+  position: relative;
+  overflow: hidden;
   margin-top: 28px;
   padding: 34px;
   max-width: 850px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.045),
+    rgba(255, 255, 255, 0.02)
+  );
+
+  border: 1px solid var(--card-border);
+  border-radius: 18px;
+  backdrop-filter: blur(10px);
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -120px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(42, 116, 244, 0.16),
+    transparent 70%
+  );
+}
+
+.project-topline {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.project-code {
+  color: var(--muted);
+  font-family: "Courier New", monospace;
+  font-size: 0.75rem;
 }
 
 .project-card h3 {
-  font-size: 1.6rem;
-  margin: 12px 0;
+  position: relative;
+  z-index: 1;
+
+  margin: 18px 0 12px;
+  max-width: 600px;
+
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  line-height: 1.15;
 }
 
-.project-card p {
+.project-card > p {
+  position: relative;
+  z-index: 1;
+
+  max-width: 650px;
   color: var(--muted);
 }
 
-.project-progress {
-  display: inline-block;
-  margin-top: 22px;
+.project-tags {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.project-tags span {
+  padding: 6px 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #aeb9c9;
   font-family: "Courier New", monospace;
+  font-size: 0.7rem;
+}
+
+.project-progress {
+  position: relative;
+  z-index: 1;
+
+  margin-top: 32px;
+  padding-top: 22px;
+
+  border-top: 1px solid var(--line);
+}
+
+.progress-label,
+.progress-text {
+  font-family: "Courier New", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.progress-label {
+  color: var(--muted);
+}
+
+.progress-text {
+  display: inline-block;
+  margin-top: 10px;
   color: var(--cyan);
-  font-size: 0.86rem;
+}
+
+.progress-track {
+  width: 100%;
+  height: 4px;
+  margin-top: 12px;
+
+  overflow: hidden;
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.progress-fill {
+  width: 12%;
+  height: 100%;
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    var(--blue),
+    var(--cyan)
+  );
+
+  box-shadow: 0 0 14px rgba(66, 217, 255, 0.35);
 }
 
 .experience-item {
