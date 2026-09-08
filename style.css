@@ -2554,3 +2554,138 @@ footer {
   }
 
 }
+
+
+/* ========================================
+   CYBER NOTE ARTICLE
+======================================== */
+
+.note-article {
+  max-width: 900px;
+}
+
+
+.note-article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 45px;
+}
+
+
+.note-article-meta span {
+  padding: 6px 10px;
+
+  border:
+    1px solid
+    rgba(42, 116, 244, 0.25);
+
+  border-radius: 7px;
+
+  background:
+    rgba(42, 116, 244, 0.06);
+
+  color: var(--cyan);
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 0.67rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.8px;
+}
+
+
+.note-article-content {
+  max-width: 760px;
+}
+
+
+.note-article-content h2 {
+  margin-top: 55px;
+  margin-bottom: 18px;
+
+  font-size:
+    clamp(
+      1.5rem,
+      3vw,
+      2.2rem
+    );
+
+  line-height: 1.2;
+
+  letter-spacing: -1px;
+}
+
+
+.note-article-content h2:first-child {
+  margin-top: 0;
+}
+
+
+.note-article-content p {
+  margin-top: 18px;
+
+  color: var(--muted);
+
+  font-size: 1rem;
+
+  line-height: 1.85;
+}
+
+
+.note-source {
+  margin-top: 65px;
+
+  padding: 24px;
+
+  border:
+    1px solid
+    rgba(42, 116, 244, 0.22);
+
+  border-radius: 14px;
+
+  background:
+    rgba(42, 116, 244, 0.045);
+}
+
+
+.note-source p {
+  margin-top: 0;
+
+  color: var(--blue);
+
+  font-family:
+    "Courier New",
+    monospace;
+
+  font-size: 0.67rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+}
+
+
+.note-source a {
+  display: inline-block;
+
+  margin-top: 8px;
+
+  color: var(--text-soft);
+
+  font-size: 0.9rem;
+
+  line-height: 1.5;
+
+  transition: color 0.2s ease;
+}
+
+
+.note-source a:hover {
+  color: var(--cyan);
+}
