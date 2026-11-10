@@ -2691,7 +2691,7 @@ footer {
 }
 
 /* BLUE CYBERPUNK REDESIGN */
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
 :root{--bg:#050912;--bg-soft:#091426;--blue:#168cff;--blue-light:#46b5ff;--cyan:#35e0ff;--text:#f2f7ff;--text-soft:#cbd9eb;--muted:#8497b2;--border:rgba(115,180,255,.15);--border-blue:rgba(22,140,255,.4)}
 body{background-color:var(--bg);background-image:radial-gradient(1px 1px at 8% 12%,rgba(210,235,255,.8) 50%,transparent 100%),radial-gradient(1px 1px at 22% 72%,rgba(210,235,255,.65) 50%,transparent 100%),radial-gradient(1px 1px at 48% 18%,rgba(210,235,255,.7) 50%,transparent 100%),radial-gradient(1px 1px at 74% 36%,rgba(210,235,255,.65) 50%,transparent 100%),radial-gradient(1px 1px at 91% 80%,rgba(210,235,255,.75) 50%,transparent 100%),radial-gradient(ellipse at 52% 40%,rgba(0,100,210,.12),transparent 42%),#050912;font-family:'Space Grotesk','Segoe UI',sans-serif}
 body::before{opacity:.35;background-size:54px 54px}
